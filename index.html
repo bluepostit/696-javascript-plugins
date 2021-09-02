@@ -10,6 +10,21 @@
   <body>
     <div class="container text-center">
       <h1 class="my-5">JavaScript Plugins</h1>
+      <h2>Stimulus Demo</h2>
+      <div data-controller="disable-button">
+        <button id="click-me"
+                class="btn btn-primary btn-lg"
+                data-disable-button-target="clickMe"
+                data-action="click->disable-button#disable">
+          Click me!
+        </button>
+        <button class="btn btn-info btn-lg ml-2 d-none"
+                data-disable-button-target="reset"
+                data-action="click->disable-button#reset">
+          Reset
+        </button>
+      </div>
+
       <h2>Music Genre Select</h2>
       <select id="music-genres">
         <option value="jazz">Jazz</option>
