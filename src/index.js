@@ -1,4 +1,7 @@
+import { initSortable } from './plugins/init_sortable';
 import { movieSearch, onSearch } from './movies';
+
+initSortable();
 
 // Search immediately as the page loads!
 movieSearch("the matrix");
