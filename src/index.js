@@ -38,12 +38,3 @@ searchForm.addEventListener('submit', (event) => {
   // Show results in the page
   movieSearch(searchTerm);
 });
-
-
-const button = document.querySelector('#click-me');
-button.addEventListener('click', (event) => {
-  console.log('I was clicked!');
-  console.log(event.currentTarget);
-  event.currentTarget.innerText = 'Please wait...';
-  event.currentTarget.setAttribute('disabled', '');
-});
