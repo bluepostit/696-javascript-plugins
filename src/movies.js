@@ -34,6 +34,6 @@ const onSearch = (event) => {
   // Fetch the URL
   // Show results in the page
   movieSearch(searchTerm);
-}
+};
 
 export { movieSearch, onSearch };
